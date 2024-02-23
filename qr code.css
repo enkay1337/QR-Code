@@ -1,0 +1,76 @@
+body {
+  height: 100vh; /* Full viewport height */
+  margin: 0;
+  background-color: hsl(212, 45%, 89%);
+  font-family: "Outfit", sans-serif;
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+}
+
+.qr-code-layout {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  padding: 10px;
+  padding-bottom: 30px;
+  border-radius: 20px;
+  text-align: center;
+  max-width: 250px;
+}
+
+
+.qr-code {
+  height: 250px;
+  width: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 18px;
+}
+
+.qr-code-info {
+  width: 100%;
+  max-width: 650px;
+}
+
+.info-header {
+  font-weight: 700;
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: hsl(218, 44%, 22%);
+}
+
+.info-content {
+  font-weight: 400;
+  font-size: 15px;
+  color: hsl(220, 15%, 55%);
+}
+
+@media (min-width: 375px) and (max-width: 1020px) {
+  .qr-code {
+    height: 750px;
+    width: 750px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 18px;
+    border-radius: 30px;
+    margin-bottom: 50px;
+  }
+
+  .info-header {
+    font-size: 50px;
+    margin-bottom: 50px;
+  }
+
+  .info-content {
+    font-size: 40px;
+  }
+
+  .qr-code-layout {
+    padding: 35px 35px 100px 35px;
+    border-radius: 45px;
+    max-width: none;
+  }
+}
